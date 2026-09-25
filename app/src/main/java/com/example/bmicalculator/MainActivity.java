@@ -100,11 +100,17 @@ public class MainActivity extends AppCompatActivity {
         if (weightText.isEmpty()
                 || heightText.isEmpty()) {
 
-            bmiResult.setText(
+            // Keep BMI result as placeholder
+            bmiResult.setText("--");
+
+            // Show error message in category area
+            categoryResult.setText(
                     R.string.invalid_input
             );
 
-            categoryResult.setText("");
+            categoryResult.setTextColor(
+                    getColor(R.color.text_primary)
+            );
 
             return;
         }
@@ -124,11 +130,17 @@ public class MainActivity extends AppCompatActivity {
         if (weight <= 0
                 || heightCm <= 0) {
 
-            bmiResult.setText(
+            // Keep BMI result as placeholder
+            bmiResult.setText("--");
+
+            // Show error message in category area
+            categoryResult.setText(
                     R.string.invalid_zero
             );
 
-            categoryResult.setText("");
+            categoryResult.setTextColor(
+                    getColor(R.color.overweight_color)
+            );
 
             return;
         }
@@ -221,11 +233,11 @@ public class MainActivity extends AppCompatActivity {
                 int digitsAfterZero) {
 
             mPattern = Pattern.compile(
-                    "[0-9]{0," +
-                            (digits - 1) +
-                            "}+((\\.[0-9]{0," +
-                            (digitsAfterZero - 1) +
-                            "})?)||(\\.)?"
+                    "[0-9]{0,"
+                            + (digits - 1)
+                            + "}+((\\.[0-9]{0,"
+                            + (digitsAfterZero - 1)
+                            + "})?)||(\\.)?"
             );
         }
 

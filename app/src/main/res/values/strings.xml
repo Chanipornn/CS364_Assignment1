@@ -2,19 +2,32 @@
 <resources>
 
     <string name="app_name">BMI Calculator</string>
+
+    <!-- Title -->
     <string name="title_bmi">BMI Calculator</string>
+    <string name="subtitle_bmi">Calculate your Body Mass Index</string>
+
+    <!-- Input -->
     <string name="weight">Weight (kg)</string>
     <string name="height">Height (cm)</string>
+    <string name="weight_hint">Enter your weight</string>
+    <string name="height_hint">Enter your height</string>
+
+    <!-- Button -->
     <string name="calculate">Calculate</string>
+
+    <!-- Result -->
     <string name="bmi">BMI</string>
     <string name="bmi_category">Category</string>
+
+    <!-- BMI Categories -->
     <string name="underweight">Underweight</string>
     <string name="normal">Normal</string>
     <string name="overweight">Overweight</string>
     <string name="obese">Obese</string>
+
+    <!-- Validation -->
     <string name="invalid_input">Please enter weight and height.</string>
-    <string name="invalid_zero">
-        Weight and height must be greater than 0.
-    </string>
+    <string name="invalid_zero">Weight and height must be greater than 0.</string>
 
 </resources>

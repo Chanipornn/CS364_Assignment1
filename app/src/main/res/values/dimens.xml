@@ -1,11 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <!-- Screen -->
     <dimen name="screen_padding">24dp</dimen>
-    <dimen name="title_size">28sp</dimen>
-    <dimen name="label_size">16sp</dimen>
-    <dimen name="result_size">24sp</dimen>
+
+    <!-- Text -->
+    <dimen name="title_size">30sp</dimen>
+    <dimen name="subtitle_size">14sp</dimen>
+    <dimen name="label_size">15sp</dimen>
+    <dimen name="input_text_size">16sp</dimen>
     <dimen name="button_text_size">16sp</dimen>
-    <dimen name="input_height">56dp</dimen>
+    <dimen name="result_size">42sp</dimen>
+    <dimen name="category_result_size">22sp</dimen>
+
+    <!-- Input -->
+    <dimen name="input_height">58dp</dimen>
+    <dimen name="input_padding">16dp</dimen>
+
+    <!-- Card -->
+    <dimen name="card_padding">24dp</dimen>
+    <dimen name="card_elevation">4dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_small">6dp</dimen>
+    <dimen name="margin_medium">12dp</dimen>
+    <dimen name="margin_large">20dp</dimen>
+    <dimen name="margin_xlarge">30dp</dimen>
+
+    <!-- Result decoration -->
+    <dimen name="result_line_width">60dp</dimen>
+    <dimen name="result_line_height">3dp</dimen>
 
 </resources>
