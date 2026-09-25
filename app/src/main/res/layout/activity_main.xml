@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/screen_padding">
+
+        <!-- Title -->
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/title_bmi"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- Weight -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/weight"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/label_size" />
+
+        <EditText
+            android:id="@+id/weightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:hint="@string/weight"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="16dp" />
+
+
+        <!-- Height -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/height"
+            android:textColor="@color/text_primary"
+            android:textSize="@dimen/label_size" />
+
+        <EditText
+            android:id="@+id/heightEditText"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/input_height"
+            android:hint="@string/height"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- Calculate -->
+
+        <Button
+            android:id="@+id/calculateButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/calculate"
+            android:textSize="@dimen/button_text_size"
+            android:layout_marginBottom="24dp" />
+
+
+        <!-- BMI -->
+
+        <TextView
+            android:id="@+id/bmiLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/bmi"
+            android:textSize="@dimen/label_size" />
+
+        <TextView
+            android:id="@+id/bmiResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--"
+            android:textSize="@dimen/result_size"
+            android:textStyle="bold"
+            android:layout_marginBottom="20dp" />
+
+
+        <!-- Category -->
+
+        <TextView
+            android:id="@+id/categoryLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/bmi_category"
+            android:textSize="@dimen/label_size" />
+
+        <TextView
+            android:id="@+id/categoryResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="--"
+            android:textSize="@dimen/result_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>

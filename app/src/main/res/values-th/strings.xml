@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">เครื่องคำนวณดัชนีมวลกาย</string>
+    <string name="title_bmi">ค่าดัชนีมวลกาย</string>
+    <string name="weight">น้ำหนัก (กิโลกรัม)</string>
+    <string name="height">ส่วนสูง (เซนติเมตร)</string>
+    <string name="calculate">คำนวณ</string>
+    <string name="bmi">ค่าดัชนีมวลกาย</string>
+    <string name="bmi_category">อยู่ในเกณฑ์</string>
+    <string name="underweight">ผอม</string>
+    <string name="normal">ปกติ</string>
+    <string name="overweight">น้ำหนักเกิน</string>
+    <string name="obese">อ้วน</string>
+    <string name="invalid_input">
+        กรุณากรอกน้ำหนักและส่วนสูง
+    </string>
+    <string name="invalid_zero">
+        น้ำหนักและส่วนสูงต้องมากกว่า 0
+    </string>
+
+</resources>
