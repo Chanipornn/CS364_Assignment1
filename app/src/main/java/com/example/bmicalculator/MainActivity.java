@@ -101,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
                 || heightText.isEmpty()) {
 
             // Keep BMI result as placeholder
-            bmiResult.setText("--");
+            bmiResult.setText(R.string.result_placeholder);
 
             // Show error message in category area
             categoryResult.setText(
@@ -131,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
                 || heightCm <= 0) {
 
             // Keep BMI result as placeholder
-            bmiResult.setText("--");
+            bmiResult.setText(R.string.result_placeholder);
 
             // Show error message in category area
             categoryResult.setText(
@@ -233,11 +233,9 @@ public class MainActivity extends AppCompatActivity {
                 int digitsAfterZero) {
 
             mPattern = Pattern.compile(
-                    "[0-9]{0,"
-                            + (digits - 1)
-                            + "}+((\\.[0-9]{0,"
-                            + (digitsAfterZero - 1)
-                            + "})?)||(\\.)?"
+                    "[0-9]{0," + digits
+                            + "}(\\.[0-9]{0," + digitsAfterZero
+                            + "})?"
             );
         }
 

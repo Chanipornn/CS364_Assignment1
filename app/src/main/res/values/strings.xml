@@ -19,6 +19,7 @@
     <!-- Result -->
     <string name="bmi">BMI</string>
     <string name="bmi_category">Category</string>
+    <string name="result_placeholder">--</string>
 
     <!-- BMI Categories -->
     <string name="underweight">Underweight</string>
