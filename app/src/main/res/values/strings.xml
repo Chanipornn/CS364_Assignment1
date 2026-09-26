@@ -16,10 +16,13 @@
     <!-- Button -->
     <string name="calculate">Calculate</string>
 
-    <!-- Result -->
+    <!-- Result Labels -->
     <string name="bmi">BMI</string>
     <string name="bmi_category">Category</string>
-    <string name="result_placeholder">--</string>
+
+    <!-- Result Placeholders -->
+    <string name="bmi_placeholder">BMI Score</string>
+    <string name="category_placeholder">Your Result</string>
 
     <!-- BMI Categories -->
     <string name="underweight">Underweight</string>

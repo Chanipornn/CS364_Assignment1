@@ -14,6 +14,7 @@ import java.text.DecimalFormat;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+
 public class MainActivity extends AppCompatActivity {
 
     private EditText weightEditText;
@@ -23,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView categoryResult;
 
     private DecimalFormat formatter =
-            new DecimalFormat("#,###.##");
+            new DecimalFormat("#,###.00");
 
 
     @Override
@@ -81,18 +82,14 @@ public class MainActivity extends AppCompatActivity {
         );
     }
 
-
     private void calculateBMI() {
 
         String weightText =
-                weightEditText.getText()
-                        .toString()
-                        .trim();
+                weightEditText.getText() .toString() .trim() ;
 
         String heightText =
-                heightEditText.getText()
-                        .toString()
-                        .trim();
+
+                heightEditText.getText() .toString() .trim();
 
 
         // Check empty input
@@ -101,7 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 || heightText.isEmpty()) {
 
             // Keep BMI result as placeholder
-            bmiResult.setText(R.string.result_placeholder);
+            bmiResult.setText(R.string.bmi_placeholder);
 
             // Show error message in category area
             categoryResult.setText(
@@ -109,7 +106,7 @@ public class MainActivity extends AppCompatActivity {
             );
 
             categoryResult.setTextColor(
-                    getColor(R.color.text_primary)
+                    getColor(R.color.error_color)
             );
 
             return;
@@ -131,15 +128,15 @@ public class MainActivity extends AppCompatActivity {
                 || heightCm <= 0) {
 
             // Keep BMI result as placeholder
-            bmiResult.setText(R.string.result_placeholder);
+            bmiResult.setText(R.string.bmi_placeholder);
 
             // Show error message in category area
             categoryResult.setText(
-                    R.string.invalid_zero
+                    R.string.invalid_input
             );
 
             categoryResult.setTextColor(
-                    getColor(R.color.overweight_color)
+                    getColor(R.color.error_color)
             );
 
             return;
@@ -157,12 +154,12 @@ public class MainActivity extends AppCompatActivity {
         double bmi =
                 weight / (heightM * heightM);
 
+        // Round BMI to 1 decimal place
+        bmi = Math.round(bmi * 10.0) / 10.0;
 
-        // Format BMI
-
+        // Display with 2 decimal places
         String formattedBMI =
                 formatter.format(bmi);
-
 
         bmiResult.setText(formattedBMI);
 
@@ -266,5 +263,6 @@ public class MainActivity extends AppCompatActivity {
 
             return null;
         }
+
     }
 }

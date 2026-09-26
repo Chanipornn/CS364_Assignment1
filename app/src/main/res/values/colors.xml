@@ -26,4 +26,7 @@
     <color name="overweight_color">#FF9800</color>
     <color name="obese_color">#F44336</color>
 
+    <!-- Error -->
+    <color name="error_color">#F44336</color>
+
 </resources>
