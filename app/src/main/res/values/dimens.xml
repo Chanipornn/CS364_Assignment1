@@ -84,4 +84,10 @@
     <dimen name="land_divider_margin_top">10dp</dimen>
     <dimen name="land_divider_margin_bottom">12dp</dimen>
 
+    <!-- padding size -->
+    <dimen name="padding_small">6dp</dimen>
+    <dimen name="padding_medium">18dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+    <dimen name="padding_xlarge">30dp</dimen>
+
 </resources>

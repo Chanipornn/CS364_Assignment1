@@ -101,7 +101,6 @@
                 android:paddingEnd="@dimen/input_padding"
                 android:layout_marginBottom="@dimen/margin_large" />
 
-
             <!-- Height -->
 
             <TextView
@@ -112,7 +111,6 @@
                 android:textSize="@dimen/label_size"
                 android:textStyle="bold"
                 android:layout_marginBottom="@dimen/margin_small" />
-
 
             <EditText
                 android:id="@+id/heightEditText"
@@ -127,7 +125,6 @@
                 android:paddingStart="@dimen/input_padding"
                 android:paddingEnd="@dimen/input_padding"
                 android:layout_marginBottom="@dimen/margin_large" />
-
 
             <!-- Calculate Button -->
 
