@@ -22,3 +22,6 @@
 * รองรับภาษาไทยและภาษาอังกฤษ
 * ใช้ Resource สำหรับข้อความ สี และขนาดต่าง ๆ
 * รองรับการปรับขนาดตัวอักษรตามการตั้งค่าของระบบ
+
+## Video สาธิตวิธีการใช้
+* https://drive.google.com/file/d/1UwQ5-0oFDmiRNWWiKaX8Wrlx6iICoBng/view?usp=drivesdk
