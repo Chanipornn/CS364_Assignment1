@@ -11,48 +11,69 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <!-- HEADER -->
+        <!-- ================= HEADER ================= -->
 
-        <LinearLayout
+        <FrameLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:gravity="center"
             android:background="@color/primary"
-            android:paddingStart="24dp"
-            android:paddingEnd="24dp"
-            android:paddingTop="18dp"
-            android:paddingBottom="18dp">
+            android:paddingTop="@dimen/header_padding_vertical"
+            android:paddingBottom="@dimen/header_padding_vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
+            <!-- Logo -->
+
+            <ImageView
+                android:id="@+id/bmiLogo"
+                android:layout_width="@dimen/logo_width"
+                android:layout_height="@dimen/logo_height"
+                android:layout_gravity="start|center_vertical"
+                android:layout_marginStart="@dimen/logo_margin_start"
+                android:src="@drawable/bmi_logo"
+                android:scaleType="fitCenter"
+                android:contentDescription="@string/title_bmi" />
+
+
+            <!-- Centered Title -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/title_bmi"
-                android:textColor="@color/text_white"
-                android:textSize="22sp"
-                android:textStyle="bold"
-                android:gravity="center" />
+                android:orientation="vertical"
+                android:gravity="center"
+                android:layout_gravity="center">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="4dp"
-                android:text="@string/subtitle_bmi"
-                android:textColor="@color/text_white"
-                android:alpha="0.9"
-                android:textSize="12sp"
-                android:gravity="center" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/title_bmi"
+                    android:textColor="@color/text_white"
+                    android:textSize="@dimen/header_title_size"
+                    android:textStyle="bold"
+                    android:gravity="center" />
 
-        </LinearLayout>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/header_subtitle_margin"
+                    android:text="@string/subtitle_bmi"
+                    android:textColor="@color/text_white"
+                    android:alpha="0.9"
+                    android:textSize="@dimen/header_subtitle_size"
+                    android:gravity="center" />
+
+            </LinearLayout>
+
+        </FrameLayout>
 
 
-        <!-- CONTENT -->
+        <!-- ================= CONTENT ================= -->
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:padding="24dp">
+            android:padding="@dimen/screen_padding">
+
 
             <!-- Weight -->
 
@@ -61,23 +82,24 @@
                 android:layout_height="wrap_content"
                 android:text="@string/weight"
                 android:textColor="@color/text_primary"
-                android:textSize="15sp"
+                android:textSize="@dimen/label_size"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="@dimen/margin_small" />
+
 
             <EditText
                 android:id="@+id/weightEditText"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="@dimen/input_height"
                 android:background="@drawable/edittext_background"
                 android:hint="@string/weight_hint"
                 android:inputType="numberDecimal"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_secondary"
-                android:textSize="16sp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:layout_marginBottom="20dp" />
+                android:textSize="@dimen/input_text_size"
+                android:paddingStart="@dimen/input_padding"
+                android:paddingEnd="@dimen/input_padding"
+                android:layout_marginBottom="@dimen/margin_large" />
 
 
             <!-- Height -->
@@ -87,23 +109,24 @@
                 android:layout_height="wrap_content"
                 android:text="@string/height"
                 android:textColor="@color/text_primary"
-                android:textSize="15sp"
+                android:textSize="@dimen/label_size"
                 android:textStyle="bold"
-                android:layout_marginBottom="8dp" />
+                android:layout_marginBottom="@dimen/margin_small" />
+
 
             <EditText
                 android:id="@+id/heightEditText"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="@dimen/input_height"
                 android:background="@drawable/edittext_background"
                 android:hint="@string/height_hint"
                 android:inputType="numberDecimal"
                 android:textColor="@color/text_primary"
                 android:textColorHint="@color/text_secondary"
-                android:textSize="16sp"
-                android:paddingStart="16dp"
-                android:paddingEnd="16dp"
-                android:layout_marginBottom="24dp" />
+                android:textSize="@dimen/input_text_size"
+                android:paddingStart="@dimen/input_padding"
+                android:paddingEnd="@dimen/input_padding"
+                android:layout_marginBottom="@dimen/margin_large" />
 
 
             <!-- Calculate Button -->
@@ -111,16 +134,16 @@
             <Button
                 android:id="@+id/calculateButton"
                 android:layout_width="match_parent"
-                android:layout_height="56dp"
+                android:layout_height="@dimen/input_height"
                 android:text="@string/calculate"
                 android:textColor="@color/text_primary"
-                android:textSize="16sp"
+                android:textSize="@dimen/button_text_size"
                 android:textStyle="bold"
                 android:backgroundTint="@color/accent_yellow"
-                android:layout_marginBottom="24dp" />
+                android:layout_marginBottom="@dimen/margin_large" />
 
 
-            <!-- RESULT -->
+            <!-- ================= RESULT ================= -->
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -128,8 +151,11 @@
                 android:orientation="vertical"
                 android:gravity="center"
                 android:background="@drawable/result_card"
-                android:elevation="3dp"
-                android:padding="24dp">
+                android:elevation="@dimen/card_elevation"
+                android:padding="@dimen/card_padding">
+
+
+                <!-- BMI Label -->
 
                 <TextView
                     android:id="@+id/bmiLabel"
@@ -137,7 +163,10 @@
                     android:layout_height="wrap_content"
                     android:text="@string/bmi"
                     android:textColor="@color/text_secondary"
-                    android:textSize="15sp" />
+                    android:textSize="@dimen/label_size" />
+
+
+                <!-- BMI Result -->
 
                 <TextView
                     android:id="@+id/bmiResult"
@@ -145,16 +174,22 @@
                     android:layout_height="wrap_content"
                     android:text="@string/bmi_placeholder"
                     android:textColor="@color/primary"
-                    android:textSize="36sp"
+                    android:textSize="@dimen/result_size"
                     android:textStyle="bold"
-                    android:layout_marginTop="6dp" />
+                    android:layout_marginTop="@dimen/margin_small" />
+
+
+                <!-- Yellow Divider -->
 
                 <View
-                    android:layout_width="60dp"
-                    android:layout_height="4dp"
+                    android:layout_width="@dimen/result_line_width"
+                    android:layout_height="@dimen/result_line_height"
                     android:background="@color/accent_yellow"
-                    android:layout_marginTop="12dp"
-                    android:layout_marginBottom="14dp" />
+                    android:layout_marginTop="@dimen/margin_medium"
+                    android:layout_marginBottom="@dimen/margin_medium" />
+
+
+                <!-- Category Label -->
 
                 <TextView
                     android:id="@+id/categoryLabel"
@@ -162,7 +197,10 @@
                     android:layout_height="wrap_content"
                     android:text="@string/bmi_category"
                     android:textColor="@color/text_secondary"
-                    android:textSize="14sp" />
+                    android:textSize="@dimen/label_size" />
+
+
+                <!-- Category Result -->
 
                 <TextView
                     android:id="@+id/categoryResult"
@@ -170,9 +208,9 @@
                     android:layout_height="wrap_content"
                     android:text="@string/category_placeholder"
                     android:textColor="@color/normal_color"
-                    android:textSize="22sp"
+                    android:textSize="@dimen/category_result_size"
                     android:textStyle="bold"
-                    android:layout_marginTop="5dp" />
+                    android:layout_marginTop="@dimen/margin_small" />
 
             </LinearLayout>
 

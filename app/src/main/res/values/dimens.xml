@@ -1,34 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <!-- Screen -->
-    <dimen name="screen_padding">24dp</dimen>
+    <!-- ================= SCREEN ================= -->
 
-    <!-- Text -->
+    <dimen name="screen_padding">20dp</dimen>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <dimen name="header_padding_vertical">10dp</dimen>
+
+    <dimen name="logo_width">60dp</dimen>
+    <dimen name="logo_height">40dp</dimen>
+    <dimen name="logo_margin_start">16dp</dimen>
+
+    <dimen name="header_title_size">20sp</dimen>
+    <dimen name="header_subtitle_size">11sp</dimen>
+    <dimen name="header_subtitle_margin">2dp</dimen>
+
+
+    <!-- ================= TEXT ================= -->
+
     <dimen name="title_size">30sp</dimen>
     <dimen name="subtitle_size">14sp</dimen>
     <dimen name="label_size">15sp</dimen>
     <dimen name="input_text_size">16sp</dimen>
     <dimen name="button_text_size">16sp</dimen>
-    <dimen name="result_size">42sp</dimen>
+
+    <!-- BMI result -->
+    <dimen name="result_size">28sp</dimen>
     <dimen name="category_result_size">22sp</dimen>
 
-    <!-- Input -->
-    <dimen name="input_height">58dp</dimen>
+
+    <!-- ================= INPUT ================= -->
+
+    <dimen name="input_height">52dp</dimen>
     <dimen name="input_padding">16dp</dimen>
 
-    <!-- Card -->
-    <dimen name="card_padding">24dp</dimen>
-    <dimen name="card_elevation">4dp</dimen>
 
-    <!-- Margins -->
-    <dimen name="margin_small">6dp</dimen>
+    <!-- ================= CARD ================= -->
+
+    <dimen name="card_padding">20dp</dimen>
+    <dimen name="card_elevation">3dp</dimen>
+    <dimen name="result_card_min_height">260dp</dimen>
+
+
+    <!-- ================= MARGINS ================= -->
+
+    <dimen name="margin_small">4dp</dimen>
     <dimen name="margin_medium">12dp</dimen>
-    <dimen name="margin_large">20dp</dimen>
-    <dimen name="margin_xlarge">30dp</dimen>
+    <dimen name="margin_large">18dp</dimen>
+    <dimen name="margin_xlarge">20dp</dimen>
 
-    <!-- Result decoration -->
+
+    <!-- ================= RESULT DECORATION ================= -->
+
     <dimen name="result_line_width">60dp</dimen>
-    <dimen name="result_line_height">3dp</dimen>
+    <dimen name="result_line_height">4dp</dimen>
+
+    <!-- Landscape Header -->
+    <dimen name="land_header_padding_vertical">10dp</dimen>
+    <dimen name="land_logo_width">60dp</dimen>
+    <dimen name="land_logo_height">40dp</dimen>
+    <dimen name="land_logo_margin_start">16dp</dimen>
+    <dimen name="land_header_title_size">20sp</dimen>
+    <dimen name="land_header_subtitle_size">11sp</dimen>
+    <dimen name="land_header_subtitle_margin">2dp</dimen>
+
+    <!-- Landscape Content -->
+    <dimen name="land_content_padding_horizontal">20dp</dimen>
+    <dimen name="land_content_padding_vertical">20dp</dimen>
+    <dimen name="land_column_padding">10dp</dimen>
+    <dimen name="land_label_margin_bottom">7dp</dimen>
+    <dimen name="land_input_margin_bottom">16dp</dimen>
+    <dimen name="land_height_margin_bottom">18dp</dimen>
+
+    <!-- Landscape Result -->
+    <dimen name="land_result_min_height">260dp</dimen>
+    <dimen name="land_result_padding">20dp</dimen>
+    <dimen name="land_result_margin_top">4dp</dimen>
+    <dimen name="land_divider_width">60dp</dimen>
+    <dimen name="land_divider_height">4dp</dimen>
+    <dimen name="land_divider_margin_top">10dp</dimen>
+    <dimen name="land_divider_margin_bottom">12dp</dimen>
 
 </resources>
